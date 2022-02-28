@@ -245,11 +245,10 @@ footer {
 }
 
 .footer__container {
-    padding: 0 40px;
-    margin: 0 auto;
+    padding: 23.5px 40px;
     display: flex;
     justify-content: space-between;
-    line-height: 100px;
+    align-items: center;
 }
 
 .footer__logo {
@@ -257,7 +256,6 @@ footer {
     width: 120px;
     fill: #fff;
     transition: opacity .2s linear;
-    vertical-align: middle;
    }
    
 .footer__logo:hover {
@@ -300,8 +298,14 @@ footer {
         transition: .5s ease-out;
     }
 
+    .header__container.open {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+    }
+
     .nav {
-        display: none;
+        display: flex;
         position: absolute;
         top: 0;
         right: -100%;
@@ -311,18 +315,15 @@ footer {
         min-height: 100vh;
         background-color: #028865;
         opacity: 1;
-        transition: all 1s ease-out;
+        transition: all .5s ease-out;
     }
 
     .nav.open {
-        display: flex;
-        width: 100%;
         right: 0;
-        transition: 1s ease-out;
+        transition: .5s ease-out;
     }
 
     .nav__list {
-        padding-top: 100px;
         padding-left: 120px;
         flex-direction: column;
         justify-content: center;
