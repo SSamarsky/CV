@@ -28,31 +28,38 @@
     <header class="header">
         <div class="header__container">
             <h2 class="header__logo">CV</h2>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li>
-                        <a class="nav__link" href="#contacts">Contacts</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#summary">Summary</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#code">Code</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#courses">Courses</a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="#pet">Projects</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__inner">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" data-i18="contacts" href="#contacts">Contacts</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="summary" href="#summary">Summary</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="skills" href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="code" href="#code">Code</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="education" href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="courses" href="#courses">Courses</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" data-i18="projects" href="#pet">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="switch">
+                    <div class="switch__link en active">En</div>
+                    &nbsp;/&nbsp;
+                    <div class="switch__link ru">Ru</div>
+                </div>
+            </div>
             <div class="burger">
                 <div class="burger__line line-1"></div>
                 <div class="burger__line line-2"></div>
@@ -64,33 +71,33 @@
         <section class="profile">
                 <img class="photo" src="assets/img/photo.jpg" alt="Photo of Sergey Samarskiy">
                 <div class="title">
-                    <h1 class="name">Sergey Samarskiy</h1>
+                    <h1 class="name" data-i18="name">Sergey Samarskiy</h1>
                     <hr class="line">
-                    <h2 class="profession">Junior Front-End developer</h2>
+                    <h2 class="profession" data-i18="profession">Junior Front-End developer</h2>
                 </div>
         </section>
         <div class="big-line"></div>
         <div class="container">
             <section class="section" id="contacts">
-                <h2 class="section__title">Contacts</h2>
+                <h2 class="section__title" data-i18="contacts">Contacts</h2>
                 <ul class="section__list">
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-map-marker-alt icon"></i>
                         </div>
-                        <div><strong>Russia</strong>, Nizhny Novgorod region, Sarov</div>
+                        <div><strong data-i18="location-b">Russia</strong><span data-i18="location">, Nizhny Novgorod region, Sarov</span></div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-mobile-alt icon"></i>
                         </div>
-                        <div><strong>Phone</strong>: +79506215056</div>
+                        <div><strong data-i18="phone">Phone</strong><span>: +79506215056</span></div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="far fa-envelope icon"></i>
                         </div>
-                        <div><strong>Email</strong>: js.samarsky@gmail.com</div>
+                        <div><strong data-i18="email">Email</strong>: js.samarsky@gmail.com</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
@@ -110,20 +117,20 @@
                 </ul>
             </section>
             <section class="section" id="summary">
-                <h2 class="section__title">Summary</h2>
+                <h2 class="section__title" data-i18="summary">Summary</h2>
                 <div class="section__inner">
                     <i class="far fa-address-card icon"></i>
                     <p>
-                        I am 28 years old. <br>
-                        I work as a process engineer at a factory. <br>
-                        I am studying JavaScript/Front-End development. <br>
-                        I love to learn and improve my programming skills. <br>
-                        I am looking for a job in a friendly team with interesting tasks.<br>
+                        <span data-i18="text-1">I am 28 years old.</span> <br>
+                        <span data-i18="text-2">I work as a process engineer at a factory.</span> <br>
+                        <span data-i18="text-3">I am studying JavaScript/Front-End development.</span> <br>
+                        <span data-i18="text-4">I love to learn and improve my programming skills.</span> <br>
+                        <span data-i18="text-5">I am looking for a job in a friendly team with interesting tasks.</span> <br>
                     </p>
                 </div>
             </section>
             <section class="section" id="skills">
-                <h2 class="section__title">Skills</h2>
+                <h2 class="section__title" data-i18="skills">Skills</h2>
                 <ul class="section__list">
                     <li class="section__item">
                         <div class="item__inner">
@@ -158,12 +165,12 @@
                 </ul>
             </section>
             <section class="section" id="code">
-                <h2 class="section__title">Code</h2>
+                <h2 class="section__title" data-i18="code">Code</h2>
                 <div class="section__inner">
                     <i class="fas fa-code icon"></i>
                     <div>
                         <div>
-                            <b>RGB To Hex Conversion</b> <br>
+                            <b data-i18="code-text">RGB To Hex Conversion</b> <br>
                             JavaScript:
                         </div>
                         <div class="code">
@@ -195,24 +202,24 @@ function rgb(r, g, b) {
                 </div>
             </section>
             <section class="section" id="education">
-                <h2 class="section__title">Education</h2>
+                <h2 class="section__title" data-i18="education">Education</h2>
                 <div class="section__inner">
                     <i class="fas fa-user-graduate icon"></i>
                     <ul class="section__list">
                         <li class="section__item not__padding">
                             <div>
-                                <strong>University</strong>: Nizhny Novgorod State Technical University n.a. R.E. Alekseev
+                                <strong data-i18="university">University</strong><span data-i18="university-education">: Nizhny Novgorod State Technical University n.a. R.E. Alekseev</span>
                             </div>
                         </li>
                         <li class="section__item not__padding">
                             <div>
-                                <b>Higher education</b>: master's degree
+                                <b data-i18="higher-education">Higher education</b><span data-i18="degree">: master's degree</span>
                             </div>
                         </li>
                 </div>
             </section>
             <section class="section" id="courses">
-                <h2 class="section__title">Courses</h2>
+                <h2 class="section__title" data-i18="courses">Courses</h2>
                 <ul class="section__list">
                     <li class="section__item">
                         <div class="item__inner">
@@ -243,61 +250,61 @@ function rgb(r, g, b) {
                             <i class="fas fa-book icon"></i>
                         </div>
                         <div>
-                        <b>Book</b>: Head First JavaScript Programming. Eric Freeman, Elisabeth Robson
+                        <b  data-i18="book">Book</b><span data-i18="book-read">: Head First JavaScript Programming. Eric Freeman, Elisabeth Robson</span>
                         </div>
                         
                     </li>
                 </ul>
             </section>
             <section class="section" id="pet">
-                <h2 class="section__title">Pet projects</h2>
+                <h2 class="section__title" data-i18="projects">Pet projects</h2>
                 <div class="section__inner">
                     <i class="fas fa-edit icon"></i>
                     <ul class="section__list">
                         <li class="section__item not__padding">
                             <a class="link" href="https://rolling-scopes-school.github.io/ssamarsky-JSFEPRESCHOOL/portfolio/" target="_blank">
-                                <b>Website</b>
+                                <b data-i18="website">Website</b>
                             </a>
                         </li>
                         <li class="section__item not__padding">
                             <a class="link" href="https://rolling-scopes-school.github.io/ssamarsky-JSFEPRESCHOOL/audio-player/" target="_blank">
-                                <b>Audio-player</b>
+                                <b data-i18="audio-player">Audio-player</b>
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="section" id="english">
-                <h2 class="section__title">English</h2>
+                <h2 class="section__title" data-i18="english">English</h2>
                 <div class="section__inner">
                     <i class="fab fa-leanpub icon"></i>
                     <div>
-                        <b>English level</b>: A1+ (Low Pre-Intermediate) <br>
-                        I am learning English from a book "English Grammar in Use" Murphy Raymond. <br>
-                        I don't have much speaking practice
+                        <b data-i18="level">English level</b><span data-i18="level-english">: A1+ (Low Pre-Intermediate)</span> <br>
+                        <span data-i18="english-text">I am learning English from a book "English Grammar in Use" Murphy Raymond.</span> <br>
+                        <span data-i18="english-text-2">I don't have much speaking practice</span>
                     </div>
                 </div>
             </section>
             <section class="section section__last" id="hobby">
-                <h2 class="section__title">Hobby</h2>
+                <h2 class="section__title" data-i18="hobby">Hobby</h2>
                 <ul class="section__list">
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-guitar icon"></i>
                         </div>
-                        <div>Music / Playing guitar</div>
+                        <div data-i18="hobby-1">Music / Playing guitar</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-dumbbell icon"></i>
                         </div>
-                        <div>Fitness / Healthy lifestyle</div>
+                        <div data-i18="hobby-2">Fitness / Healthy lifestyle</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-book-reader icon"></i>
                         </div>
-                        <div>Reading / Classical and World literature</div>
+                        <div data-i18="hobby-3">Reading / Classical and World literature</div>
                     </li>
                 </ul>
             </section>
