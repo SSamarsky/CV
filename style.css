@@ -24,10 +24,8 @@ p {
 
 header {
     margin: 0 auto;
-    max-width: 1440px;
     height: 100px;
     background-color: #028865;
-    border-radius: 5px;
 }
 
 .header__container {
@@ -145,11 +143,10 @@ main {
 }
 
 .big-line {
-    max-width: 90vw;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
     height: 10px;
-    border-radius: 3px;
     background-color: #019971;
 }
 
@@ -164,7 +161,6 @@ main {
     border-bottom: 2px solid #373434;
     margin: 40px;
     padding-bottom: 50px;
-    padding-right: 20px;
 }
 
 .section__last {
@@ -259,12 +255,15 @@ pre {
     padding: 10px;
 }
 
+.books li {
+    margin: 5px 0;
+    list-style: decimal;
+}
+
 footer {
     margin: 0 auto;
-    max-width: 1440px;
     height: 100px;
     background-color: #028865;
-    border-radius: 5px;
     color: #fff;
     font-size: 20px;
 }
