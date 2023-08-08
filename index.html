@@ -73,7 +73,7 @@
                 <div class="title">
                     <h1 class="name" data-i18="name">Sergey Samarskiy</h1>
                     <hr class="line">
-                    <h2 class="profession" data-i18="profession">Junior Front-End developer</h2>
+                    <h2 class="profession" data-i18="profession">Front-End developer</h2>
                 </div>
         </section>
         <div class="big-line"></div>
@@ -121,10 +121,10 @@
                 <div class="section__inner">
                     <i class="far fa-address-card icon"></i>
                     <p>
-                        <span data-i18="text-1">I am 28 years old.</span> <br>
-                        <span data-i18="text-2">I work as a process engineer at a factory.</span> <br>
-                        <span data-i18="text-3">I am studying JavaScript/Front-End development.</span> <br>
-                        <span data-i18="text-4">I love to learn and improve my programming skills.</span> <br>
+                        <span data-i18="text-1">I am 30 years old.</span> <br>
+                        <span data-i18="text-2">I work as a process engineer at VNIIEF.</span> <br>
+                        <span data-i18="text-3">Doing web-development (80% front-end / 20% back-end).</span> <br>
+                        <span data-i18="text-4">I love to learn and improve my skills.</span> <br>
                         <span data-i18="text-5">I am looking for a job in a friendly team with interesting tasks.</span> <br>
                     </p>
                 </div>
@@ -136,19 +136,31 @@
                         <div class="item__inner">
                             <i class="fab fa-html5 icon"></i>
                         </div>
-                        <div>HTML5</div>
+                        <div>HTML</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fab fa-css3-alt icon"></i>
                         </div>
-                        <div>CSS3</div>
+                        <div>CSS</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fab fa-js-square icon"></i>
                         </div>
-                        <div>JavaScript</div>
+                        <div>JavaScript/TypeScript</div>
+                    </li>
+                    <li class="section__item">
+                        <div class="item__inner">
+                            <i class="fab fa-python icon"></i>
+                        </div>
+                        <div>Python</div>
+                    </li>
+                    <li class="section__item">
+                        <div class="item__inner">
+                            <i class="fab fa-react icon"></i>
+                        </div>
+                        <div>React/Redux Toolkit</div>
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
@@ -170,30 +182,22 @@
                     <i class="fas fa-code icon"></i>
                     <div>
                         <div>
-                            <b data-i18="code-text">RGB To Hex Conversion</b> <br>
+                            <b data-i18="code-text">Binary search</b> <br>
                             JavaScript:
                         </div>
                         <div class="code">
                             <pre>
-function rgb(r, g, b) {
-    let hexColor = '';
-    function transformNum(num) {
-        let str = '';
-        if (num > 255) {
-            num = 255;
-        } else if (num < 0) {
-            num = 0;
-        }
-        if (num < 16) {
-            str = str + 0 + num.toString(16);
-            return str;
-        } else {
-            str = str + num.toString(16);
-            return str;
-        }
+function binarySearchIndex(arr, num) {
+    let low = 0;
+    let high = arr.length - 1;
+    while (low <= high) {
+        let mid = Math.floor((low + high) / 2);
+        let guess = arr[mid];
+        if (guess === num) return mid;
+        else if (guess > num) high = mid - 1;
+        else low = mid + 1;
     }
-    hexColor = hexColor + transformNum(r) + transformNum(g) + transformNum(b);
-    return hexColor.toUpperCase();
+    return mid;
 } 
                             </pre>
                         </div>
@@ -226,31 +230,23 @@ function rgb(r, g, b) {
                             <i class="fas fa-chalkboard-teacher icon"></i>
                         </div>
                         <div>
-                            <a class="link" href="https://rs.school/js/"><strong>The Rolling Scopes</strong></a><span>: JS / FRONT-END. STAGE 0</span>
+                            <a class="link" href="https://wearecommunity.io/events/js-fe-rs-2023q1" target="_blank"><strong>The Rolling Scopes</strong></a><span>: JS / FRONT-END</span>
                         </div>  
-                    </li>
-                    <li class="section__item">
-                        <div class="item__inner">
-                            <i class="fas fa-tasks icon"></i>
-                        </div>
-                        <div>
-                            <a class="link" href="https://www.w3schools.com/html/default.asp" target="_blank">
-                                <b>W3schools</b>
-                            </a>,&nbsp;
-                            <a class="link" href="https://ru.code-basics.com/" target="_blank">
-                                <b>Code-basics</b>
-                            </a>,&nbsp;
-                            <a class="link" href="https://learn.javascript.ru/" target="_blank">
-                                <b>Learn.javascript</b>
-                            </a>
-                        </div> 
                     </li>
                     <li class="section__item">
                         <div class="item__inner">
                             <i class="fas fa-book icon"></i>
                         </div>
                         <div>
-                        <b  data-i18="book">Book</b><span data-i18="book-read">: Head First JavaScript Programming. Eric Freeman, Elisabeth Robson</span>
+                        <b  data-i18="books">Books</b><span>:
+                            <ul class="books">
+                                <li data-i18="books-1">Grokking Algorithms: An illustrated guide for programmers and other curious people. Aditya Y. Bhargava</li>
+                                <li data-i18="books-2">You Don’t Know JS: Get Started. Kyle Simpson</li>
+                                <li data-i18="books-3">You Don’t Know JS: Scope & Closures. Kyle Simpson</li>
+                                <li data-i18="books-4">Eloquent JavaScript. Marijn Haverbeke</li>
+                                <li>...</li>
+                            </ul>
+                        </span>
                         </div>
                         
                     </li>
@@ -262,13 +258,23 @@ function rgb(r, g, b) {
                     <i class="fas fa-edit icon"></i>
                     <ul class="section__list">
                         <li class="section__item not__padding">
+                            <a class="link" href="https://rolling-scopes-school.github.io/ssamarsky-JSFE2023Q1/shelter/pages/main/index.html" target="_blank">
+                                <b data-i18="website-shelter">Website - Shelter for pets</b>
+                            </a>
+                        </li>
+                        <li class="section__item not__padding">
                             <a class="link" href="https://rolling-scopes-school.github.io/ssamarsky-JSFEPRESCHOOL/portfolio/" target="_blank">
-                                <b data-i18="website">Website</b>
+                                <b data-i18="website-photographer">Website - Photographer’s portfolio</b>
                             </a>
                         </li>
                         <li class="section__item not__padding">
                             <a class="link" href="https://rolling-scopes-school.github.io/ssamarsky-JSFEPRESCHOOL/audio-player/" target="_blank">
                                 <b data-i18="audio-player">Audio-player</b>
+                            </a>
+                        </li>
+                        <li class="section__item not__padding">
+                            <a class="link" href="https://github.com/SSamarsky?tab=repositories" target="_blank">
+                                <b data-i18="see-more">See more</b>
                             </a>
                         </li>
                     </ul>
@@ -279,9 +285,8 @@ function rgb(r, g, b) {
                 <div class="section__inner">
                     <i class="fab fa-leanpub icon"></i>
                     <div>
-                        <b data-i18="level">English level</b><span data-i18="level-english">: A1+ (Low Pre-Intermediate)</span> <br>
-                        <span data-i18="english-text">I am learning English from a book "English Grammar in Use" Murphy Raymond.</span> <br>
-                        <span data-i18="english-text-2">I don't have much speaking practice</span>
+                        <b data-i18="level">English level</b><span data-i18="level-english">: A2 (Pre-Intermediate)</span> <br>
+                        <span data-i18="english-text-1">I have little speaking practice, mostly I read and translate texts.</span>
                     </div>
                 </div>
             </section>
@@ -316,7 +321,7 @@ function rgb(r, g, b) {
                 <i class="fab fa-github icon icon__footer"></i>
                 @SSamarsky
             </a>
-            <div class="footer__item">© 2022</div>
+            <div class="footer__item">© 2023</div>
             <a href="https://rs.school/js/" target="_blank">
                 <svg class="footer__logo">
                     <use xlink:href="#rs_school"></use>
